@@ -1,0 +1,22 @@
+{
+  "name": "menorca",
+  "version": "1.0.0",
+  "description": "Portal turístic sobre Menorca amb informació sobre platges, pobles i experiències úniques de l’illa.",
+  "license": "ISC",
+  "author": "Judith Farré Bonet <jfarrebo@uoc.edu>",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel src/index.html --port 1234",
+    "build": "parcel build src/index.html --dist-dir build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "posthtml-expressions": "^1.11.4",
+    "posthtml-include": "^2.0.1",
+    "sass": "^1.93.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

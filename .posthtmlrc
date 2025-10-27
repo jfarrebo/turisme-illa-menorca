@@ -1,0 +1,26 @@
+{
+  "plugins": {
+    "posthtml-include": {
+      "root": "./src/components/"
+    },
+    "posthtml-expressions": {
+      "locals": {
+        "cards_cales": [
+          { "title": "Cala Macarelleta", "img": "./media/cala_macarelleta.png", "alt": "Cala Macarelleta", "link": "det1.html", "class": "" },
+          { "title": "Cala Mitjaneta", "img": "./media/cala_mitjaneta.png", "alt": "Cala Mitjaneta", "link": "#", "class": ""  },
+          { "title": "Cala Pilar", "img": "./media/cala_pilar.png", "alt": "Cala Pilar", "link": "#", "class": ""  },
+          { "title": "Cala Cavalleria", "img": "./media/cala_cavalleria.png", "alt": "Cala Cavalleria", "link": "#", "class": "blocked"  },
+          { "title": "Cala Turqueta", "img": "./media/cala_turqueta.png", "alt": "Cala Turqueta", "link": "#", "class": "blocked"  },
+          { "title": "Cala Galdana", "img": "./media/cala_galdana.png", "alt": "Cala Galdana", "link": "#", "class": "blocked"  }
+
+        ],
+        "cards_pobles": [
+          { "title": "Ciutadella de Menorca", "img": "./media/ciutadella.png", "alt": "Ciutadella de Menorca", "link": "#", "class": ""  },
+          { "title": "Maó", "img": "./media/mao.png", "alt": "Maó", "link": "#", "class": ""  },
+          { "title": "Binibèquer", "img": "./media/binibequer.png", "alt": "Binibèquer", "link": "#", "class": ""  }
+        ]
+      }
+    }
+  }
+}
+
