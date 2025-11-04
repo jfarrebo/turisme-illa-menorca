@@ -26,14 +26,23 @@
         <source media="(max-width: 500px)" srcset="media/hero-cala-macarella-02.png">
         <img src="media/hero-cala-macarella-02.png" width="100%" alt="Vista panoràmica de Menorca">
       </picture>
-      <h2>Descobreix Menorca</h2>
+      <h1>Descobreix Menorca</h1>
       <p>Benvingut a Menorca, una illa paradisíaca situada al cor de la Mediterrània. Coneguda per les seves cales de sorra blanca, aigües cristal·lines i pobles encantadors, Menorca és el destí perfecte per als amants de la natura i la cultura. Explora les nostres recomanacions de cales i pobles que no et pots perdre durant la teva visita.</p>
       </section>
-    <section class="cards-container" id="categoria1">
+    <article class="categories-intro">
+      <h2>Cales recomanades</h2>
+      <section class="cards-container" id="categoria1">
       <each loop="card in cards_cales.slice(0, 3)">
         <include src="card.html" locals='{"img": "{{ card.img }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'></include>
       </each>
     </section>
+      <h2>Pobles amb encant</h2>
+      <section class="cards-container" id="categoria2">
+      <each loop="card in cards_pobles.slice(0, 3)">
+        <include src="card.html" locals='{"img": "{{ card.img }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'></include>
+      </each>
+      </section>
+    </article>
   </main>
   <include src="footer.html"></include>
   

@@ -75,13 +75,26 @@ footer {
 }
 
 .introduccio {
-  h2 {
+  h1 {
     color: $color-primary;
     font-style: italic;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 38px;
     text-align: center;
   }
+}
+
+
+
+article h2 {
+  font-size: 28px;
+  text-align: center;
+  margin: 0px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .cards-container {
