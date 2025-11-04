@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maó</title>
+  <meta name="description"
+    content="Maó és la capital de Menorca, una ciutat plena d'història i cultura." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
+
+
+  <link rel="stylesheet" href="scss/styles.scss" />
+  <script type="module" src="js/app.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body data-page="pobles">
+  <include src="header.html"></include>
+
+  <main>
+    <article>
+      <section class="introduccio imatge-detall">
+        <picture>
+          <source media="(min-width: 500px)" srcset="media/poble-mao-01.png">
+          <source media="(max-width: 500px)" srcset="media/poble_mao.png">
+          <img src="media/poble-mao-01.png" width="100%" alt="Port de Maó al tard">
+        </picture>
+        <div class="descripcio">
+          <h1>Maó</h1>
+          <p>Maó, la capital de Menorca, és una ciutat viva i dinàmica que combina patrimoni històric amb un dels ports naturals més grans del món. El seu emplaçament estratègic ha estat clau al llarg dels segles, i això es reflecteix en l'arquitectura i la seva diversitat cultural.</p>
+
+          <div class="list-icones">
+            <div class="icon-info">
+              <i class="fa fa-solid fa-location-dot"></i> <span><b>Ubicació:</b> Est de Menorca</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mes-informacio">
+        <h2>Detalls de Maó</h2>
+        <p>
+          El <b>Port de Maó</b> és un punt imprescindible. Amb més de 6 quilòmetres de longitud, acull restaurants, bars i embarcacions que li donen un ambient animat i mariner. Des d'aquí es poden fer excursions a illots com Lazareto o la Illa del Rei.
+        </p>
+        <div class="imatges">
+          <img src="media/poble-mao-02.png" alt="Port de Maó al capvespre">
+          <img src="media/poble-mao-03.png" alt="Port de Maó de Menorca">
+          <img src="media/poble-mao-04.png" alt="Port de Maó des de dalt">
+        </div>
+
+        <div>
+          <p>
+            El centre històric de Maó destaca per les seves cases colonials d'estil britànic, resultat de l'ocupació anglesa del segle XVIII. Carrers com el del Claustre del Carme o la plaça de la Constitució respiren encant i activitat. És un espai ideal per passejar, comprar productes locals i descobrir racons pintorescos.
+          </p>
+
+          <p>
+            Maó és la porta d'entrada a Menorca, però també un destí en si mateix: elegant, vibrant i ple d'història, amb un caràcter que combina la tradició insular i l'obertura al món.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <include src="footer.html"></include>
+
+
+
+
+  <script type="module" src="js/toggleMenu.js"></script>
+</body>
+
+</html>

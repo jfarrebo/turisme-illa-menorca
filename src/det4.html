@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ciutadella de Menorca</title>
+  <meta name="description"
+    content="La Ciutadella de Menorca és una ciutat plena d'història i cultura." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
+
+
+  <link rel="stylesheet" href="scss/styles.scss" />
+  <script type="module" src="js/app.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body data-page="pobles">
+  <include src="header.html"></include>
+
+  <main>
+    <article>
+      <section class="introduccio imatge-detall">
+        <picture>
+          <source media="(min-width: 500px)" srcset="media/poble-ciutadella-01.png">
+          <source media="(max-width: 500px)" srcset="media/poble_ciutadella.png">
+          <img src="media/poble-ciutadella-01.png" width="100%" alt="Port de Ciutadella de Menorca">
+        </picture>
+        <div class="descripcio">
+          <h1>Ciutadella de Menorca</h1>
+          <p>Ciutadella de Menorca és una ciutat plena d'història, cultura i elegància mediterrània. Antiga capital de l'illa, conserva un nucli antic ple de carrerons empedrats, palaus, esglésies i places amb encant. Passejar-hi és com fer un viatge en el temps, entre façanes senyorials i aromes de mar.</p>
+
+          <div class="list-icones">
+            <div class="icon-info">
+              <i class="fa fa-solid fa-location-dot"></i> <span><b>Ubicació:</b> Oest de Menorca</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mes-informacio">
+        <h2>Detalls de la Ciutadella de Menorca</h2>
+        <p>
+          El <b>Port de Ciutadella</b> és un dels espais més emblemàtics. Situat en una petita ensenada natural, acull restaurants i terrasses amb vistes espectaculars. Durant el vespre, el port s'omple de vida, amb un ambient relaxat i acollidor que reflecteix l'esperit mediterrani.
+        </p>
+        <div class="imatges">
+          <img src="media/poble-ciutadella-02.png" alt="Vista del port de Ciutadella des del pont">
+          <img src="media/poble-ciutadella-03.png" alt="Port de Ciutadella de Menorca">
+          <img src="media/poble-ciutadella-04.png" alt="Catedral de Santa Maria de Ciutadella">
+        </div>
+
+        <div>
+         <p>
+         La <b>Catedral de Santa Maria</b>, construïda al segle XIV, és un dels principals punts d'interès. Al seu voltant, la Plaça des Born concentra alguns dels edificis més imponents, com el Palau de Torresaura o l'Ajuntament. És el cor històric i simbòlic de Ciutadella.
+        </p>
+
+          <p>
+            Visitar Ciutadella és viure l'equilibri perfecte entre història, mar i cultura. Una ciutat amb ànima, on cada racó té una història per explicar.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <include src="footer.html"></include>
+
+
+
+
+  <script type="module" src="js/toggleMenu.js"></script>
+</body>
+
+</html>

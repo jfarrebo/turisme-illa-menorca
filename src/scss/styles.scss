@@ -75,6 +75,7 @@ footer {
 }
 
 .introduccio {
+  
   h1 {
     color: $color-primary;
     font-style: italic;
@@ -84,7 +85,12 @@ footer {
   }
 }
 
-
+.categories-intro {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
 
 article h2 {
   font-size: 28px;
@@ -94,7 +100,7 @@ article h2 {
 article {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2.5em;
 }
 
 .cards-container {
@@ -307,6 +313,20 @@ header {
   }
 }
 
+section.links-info {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0;
+
+    li {
+      list-style: none;
+      text-align: center;
+    }
+  }
+}
+
 @media (min-width: 769px) {
   body {
     padding: 0 80px;
@@ -462,4 +482,6 @@ header {
       text-align: left;
     }
   }
+
+
 }
