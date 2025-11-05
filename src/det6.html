@@ -1,92 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binibèquer</title>
+    <meta name="description"
+      content="Binibèquer és un dels pobles més pintorescos de Menorca, amb les seves cases blanques i carrerons estrets." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
+    <link rel="stylesheet" href="scss/styles.scss" />
+    <script type="module" src="js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Binibèquer</title>
-  <meta name="description"
-    content="Binibèquer és un dels pobles més pintorescos de Menorca, amb les seves cases blanques i carrerons estrets." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <body data-page="pobles">
+    <include src="header.html"></include>
+    <main>
+      <article>
+        <section class="introduccio imatge-detall">
+          <picture>
+            <source media="(min-width: 500px)" srcset="media/poble-binibequer-01.png">
+            <source media="(max-width: 500px)" srcset="media/poble_binibequer.png">
+            <img src="media/poble-binibequer-01.png" width="100%" alt="Vista de les cases de Binibèquer">
+          </picture>
+          <div class="descripcio">
+            <h1>Binibèquer</h1>
+            <p>Binibèquer és un dels pobles més pintorescos de Menorca, situat al municipi de Sant Lluís, al sud-est de
+              l'illa. El seu nucli, conegut com a Binibèquer Vell, és un conjunt de cases blanques dissenyades per recrear
+              l'estètica tradicional dels antics pobles pesquers menorquins.</p>
 
-  <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
-
-
-  <link rel="stylesheet" href="scss/styles.scss" />
-  <script type="module" src="js/app.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body data-page="pobles">
-  <include src="header.html"></include>
-
-  <main>
-    <article>
-      <section class="introduccio imatge-detall">
-        <picture>
-          <source media="(min-width: 500px)" srcset="media/poble-binibequer-01.png">
-          <source media="(max-width: 500px)" srcset="media/poble_binibequer.png">
-          <img src="media/poble-binibequer-01.png" width="100%" alt="Vista de les cases de Binibèquer">
-        </picture>
-        <div class="descripcio">
-          <h1>Binibèquer</h1>
-          <p>Binibèquer és un dels pobles més pintorescos de Menorca, situat al municipi de Sant Lluís, al sud-est de
-            l'illa. El seu nucli, conegut com a Binibèquer Vell, és un conjunt de cases blanques dissenyades per recrear
-            l'estètica tradicional dels antics pobles pesquers menorquins.</p>
-
-          <div class="list-icones">
-            <div class="icon-info">
-              <i class="fa fa-solid fa-location-dot"></i> <span><b>Ubicació:</b> Sud-est de Menorca, prop de Sant
-                Lluís</span>
+            <div class="list-icones">
+              <div class="icon-info">
+                <i class="fa fa-solid fa-location-dot"></i> <span><b>Ubicació:</b> Sud-est de Menorca, prop de Sant
+                  Lluís</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="mes-informacio">
-        <h2>Detalls de Binibèquer</h2>
-        <p>
-          Els carrerons estrets, les portes de fusta i els arcs blancs creen un ambient màgic i fotogènic, que ha
-          convertit Binibèquer en un dels llocs més visitats de Menorca. Tot i ser una construcció relativament moderna
-          (anys 70), ha sabut capturar l'esperit autèntic de l'illa.
-        </p>
-        <div class="imatges">
-          <img src="media/poble-binibequer-02.png" alt="Nucli antinc de Binibèquer">
-          <img src="media/poble-binibequer-03.png" alt="Escales dels carrerons de Binibèquer">
-          <img src="media/poble-binibequer-04.png" alt="Carrerons de Binibèquer">
-        </div>
-
-        <div>
+        </section>
+        <section class="mes-informacio">
+          <h2>Detalls de Binibèquer</h2>
           <p>
-            A pocs minuts del nucli antic hi ha la platja de Binibèquer, amb aigües transparents i poc profundes, ideals
-            per a famílies i banyistes. El seu entorn tranquil i cuidat fa que sigui una destinació perfecta per
-            descansar i gaudir del sol.
+            Els carrerons estrets, les portes de fusta i els arcs blancs creen un ambient màgic i fotogènic, que ha
+            convertit Binibèquer en un dels llocs més visitats de Menorca. Tot i ser una construcció relativament moderna
+            (anys 70), ha sabut capturar l'esperit autèntic de l'illa.
           </p>
+          <div class="imatges">
+            <img src="media/poble-binibequer-02.png" alt="Nucli antinc de Binibèquer">
+            <img src="media/poble-binibequer-03.png" alt="Escales dels carrerons de Binibèquer">
+            <img src="media/poble-binibequer-04.png" alt="Carrerons de Binibèquer">
+          </div>
+          <div>
+            <p>
+              A pocs minuts del nucli antic hi ha la platja de Binibèquer, amb aigües transparents i poc profundes, ideals
+              per a famílies i banyistes. El seu entorn tranquil i cuidat fa que sigui una destinació perfecta per
+              descansar i gaudir del sol.
+            </p>
+            <p>
+              Binibèquer representa la Menorca més serena i estètica, una combinació de tradició, calma i bellesa
+              mediterrània que enamora a primera vista.
+            </p>
+          </div>
+        </section>
+        <section class="video">
+          <h2>Vídeo de Maó</h2>
+          <div class="video-container">
+            <iframe class="video-embed" src="https://www.youtube.com/embed/6kq7dqL18HQ?si=lo4Fva2NoonffkWi&mute=1"
+              title="Reproductor de YouTube" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </section>
+      </article>
+    </main>
 
-          <p>
-            Binibèquer representa la Menorca més serena i estètica, una combinació de tradició, calma i bellesa
-            mediterrània que enamora a primera vista.
-          </p>
-        </div>
-      </section>
-      <section class="video">
-        <h2>Vídeo de Maó</h2>
-        <div class="video-container">
-          <iframe class="video-embed" src="https://www.youtube.com/embed/6kq7dqL18HQ?si=lo4Fva2NoonffkWi&mute=1"
-            title="Reproductor de YouTube" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </section>
-    </article>
-  </main>
-  <include src="footer.html"></include>
-  <script type="module" src="js/toggleMenu.js"></script>
-</body>
-
+    <include src="footer.html"></include>
+    <script type="module" src="js/toggleMenu.js"></script>
+  </body>
 </html>
