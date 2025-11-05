@@ -2,7 +2,7 @@
 
 // Variables
 $color-primary: #1a4f63;
-$color-accent: #8c7a6b;
+$color-accent: #746558;
 $color-background: #f3efe7;
 $color-text: #2b2b2b;
 
@@ -31,7 +31,7 @@ body {
   gap: 1.25em;
 
   a {
-    color: $color-accent;
+    color: $color-primary;
     @include transition(0.3s);
 
     &:hover {
@@ -75,12 +75,11 @@ footer {
 }
 
 .introduccio {
-  
   h1 {
     color: $color-primary;
     font-style: italic;
     font-weight: normal;
-  font-size: 2.375em;
+    font-size: 2.375em;
     text-align: center;
   }
 }
@@ -112,20 +111,20 @@ article {
 
   .card {
     background-color: #ffffff;
-  padding: 1.25em;
-  border-radius: 1.25em;
-  box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.25);
-  flex: 1 1 calc(100% - 1.25em); /* ocupa el 100% menys el gap en mobile */
+    padding: 1.25em;
+    border-radius: 1.25em;
+    box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.25);
+    flex: 1 1 calc(100% - 1.25em); /* ocupa el 100% menys el gap en mobile */
     max-width: 100%;
     box-sizing: border-box;
     img {
       width: 100%;
       height: auto;
-  border-radius: 0.75em;
+      border-radius: 0.75em;
     }
     h3 {
       font-family: $font-body;
-  font-size: 1.375em;
+      font-size: 1.375em;
       color: $color-text;
       font-weight: normal;
     }
@@ -137,10 +136,10 @@ article {
       color: #fff;
       width: 100%;
       border: none;
-  padding: 0.625em 1em;
-  border-radius: 0.5em;
+      padding: 0.625em 1em;
+      border-radius: 0.5em;
       cursor: pointer;
-  font-size: 1em;
+      font-size: 1em;
       @include transition(0.3s);
 
       &:hover {
@@ -174,7 +173,7 @@ header {
     background: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     padding: 0;
-  padding-top: calc(var(--header-height) + 0.125em);
+    padding-top: calc(var(--header-height) + 0.125em);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -347,7 +346,7 @@ section.links-info {
     display: block;
     border: none;
     border-radius: 0.5em;
-    box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -359,7 +358,7 @@ section.links-info {
   }
 
   header {
-  padding: 1.125em 0;
+    padding: 1.125em 0;
 
     .icons {
       display: none;
@@ -368,7 +367,7 @@ section.links-info {
     h1 {
       order: 0;
       flex: 0 0 auto;
-  font-size: 1.75em;
+      font-size: 1.75em;
       color: $color-accent;
 
       img {
@@ -402,10 +401,10 @@ section.links-info {
 
     nav a {
       color: $color-primary;
-  font-size: 1em;
-  padding: 0.375em 0;
-  width: auto;
-  border-bottom: 0.125em solid transparent;
+      font-size: 1em;
+      padding: 0.375em 0;
+      width: auto;
+      border-bottom: 0.125em solid transparent;
       transition: border-color 160ms ease, color 160ms ease;
 
       &:hover,
@@ -471,7 +470,7 @@ section.links-info {
       flex-direction: column;
       gap: 0.5em;
       flex: 50%;
-  padding: 0 1.25em;
+      padding: 0 1.25em;
 
       h2 {
         text-align: left;
@@ -507,4 +506,3 @@ section.links-info {
     }
   }
 }
-
