@@ -327,6 +327,30 @@ section.links-info {
   }
 }
 
+/* Video embed styling */
+.video {
+  h2 {
+    text-align: center;
+    margin-bottom: 0.75em;
+  }
+  .video-container {
+    width: 100%;
+    max-width: 64em;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .video-embed {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+  }
+}
+
 @media (min-width: 48.0625em) {
   body {
     padding: 0 5em;
