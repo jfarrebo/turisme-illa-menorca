@@ -18,7 +18,6 @@ $font-body: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
-/* Shared image styles to avoid repetition */
 .introduccio img,
 .cards-container .card img,
 .mes-informacio .imatges img,
@@ -63,6 +62,12 @@ body {
     font-family: $font-body;
     color: $color-text;
     text-align: center;
+  }
+
+  :focus {
+    outline: 3px solid $color-accent;
+    outline-offset: 2px;
+    border-radius: 0.2em;
   }
 }
 
@@ -392,7 +397,9 @@ section.links-info {
 
     h1 {
       font-size: 1.75em;
-      img { max-width: 10em; }
+      img {
+        max-width: 10em;
+      }
     }
   }
 
@@ -405,7 +412,9 @@ section.links-info {
   }
 
   .introduccio {
-    h1 { font-size: 2em; }
+    h1 {
+      font-size: 2em;
+    }
   }
 
   .mes-informacio {
@@ -420,13 +429,17 @@ section.links-info {
       }
     }
   }
-  
+
   .video {
-    .video-container { max-width: 48em; }
-    .video-embed { border-radius: 0.5em; }
+    .video-container {
+      max-width: 48em;
+    }
+    .video-embed {
+      border-radius: 0.5em;
+    }
   }
 }
- 
+
 @media (min-width: 1024px) {
   body {
     padding: 0 5em;
