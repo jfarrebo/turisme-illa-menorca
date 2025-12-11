@@ -6,19 +6,18 @@
     "posthtml-expressions": {
       "locals": {
         "cards_cales": [
-          { "title": "Cala Macarelleta", "img": "./media/cala_macarelleta.png", "alt": "Cala Macarelleta", "link": "det1.html", "class": "" },
-          { "title": "Cala Mitjaneta", "img": "./media/cala_mitjaneta.png", "alt": "Cala Mitjaneta", "link": "det2.html", "class": ""  },
-          { "title": "Cala Pilar", "img": "./media/cala_pilar.png", "alt": "Cala Pilar", "link": "det3.html", "class": ""  },
-          { "title": "Cala Cavalleria", "img": "./media/cala_cavalleria.png", "alt": "Cala Cavalleria", "link": "#", "class": "blocked"  },
-          { "title": "Cala Turqueta", "img": "./media/cala_turqueta.png", "alt": "Cala Turqueta", "link": "#", "class": "blocked"  },
-          { "title": "Cala Galdana", "img": "./media/cala_galdana.png", "alt": "Cala Galdana", "link": "#", "class": "blocked"  }
-
+          { "title": "Cala Macarelleta", "img": "./media/cala_macarelleta.png?as=webp", "alt": "Cala Macarelleta", "link": "det1.html", "class": "" },
+          { "title": "Cala Mitjaneta", "img": "./media/cala_mitjaneta.png?as=webp", "alt": "Cala Mitjaneta", "link": "det2.html", "class": "" },
+          { "title": "Cala Pilar", "img": "./media/cala_pilar.png?as=webp", "alt": "Cala Pilar", "link": "det3.html", "class": "" },
+          { "title": "Cala Cavalleria", "img": "./media/cala_cavalleria.png?as=webp", "alt": "Cala Cavalleria", "link": "#", "class": "blocked" },
+          { "title": "Cala Turqueta", "img": "./media/cala_turqueta.png?as=webp", "alt": "Cala Turqueta", "link": "#", "class": "blocked" },
+          { "title": "Cala Galdana", "img": "./media/cala_galdana.png?as=webp", "alt": "Cala Galdana", "link": "#", "class": "blocked" }
         ],
-        "cards_pobles": [
-          { "title": "Ciutadella de Menorca", "img": "./media/poble_ciutadella.png", "alt": "Ciutadella de Menorca", "link": "det4.html", "class": ""  },
-          { "title": "Maó", "img": "./media/poble_mao.png", "alt": "Maó", "link": "det5.html", "class": ""  },
-          { "title": "Binibèquer", "img": "./media/poble_binibequer.png", "alt": "Binibèquer", "link": "det6.html", "class": ""  }
-        ]
+          "cards_pobles": [
+            { "title": "Ciutadella de Menorca", "img": "./media/poble_ciutadella.png?as=webp", "alt": "Ciutadella de Menorca", "link": "det4.html", "class": "" },
+            { "title": "Maó", "img": "./media/poble_mao.png?as=webp", "alt": "Maó", "link": "det5.html", "class": "" },
+            { "title": "Binibèquer", "img": "./media/poble_binibequer.png?as=webp", "alt": "Binibèquer", "link": "det6.html", "class": "" }
+          ]
       }
     }
   }

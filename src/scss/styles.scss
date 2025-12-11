@@ -18,13 +18,17 @@ $font-body: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .introduccio img,
 .cards-container .card img,
 .mes-informacio .imatges img,
 .imatge-detall img,
 .mes-informacio img {
-  width: 100%;
-  height: auto;
   border-radius: 0.75em;
 }
 
@@ -289,7 +293,13 @@ header {
       pointer-events: auto;
     }
   }
+
+  .logo {
+    width:148px;
+    height: auto;
+  }
 }
+
 
 // moved .introduccio img to shared image styles above
 
@@ -401,6 +411,9 @@ section.links-info {
         max-width: 10em;
       }
     }
+          .logo {
+    width:200px;
+  }
   }
 
   .cards-container {
@@ -508,6 +521,9 @@ section.links-info {
         border-bottom-color: $color-primary;
       }
     }
+      .logo {
+    width:200px;
+  }
   }
   .introduccio {
     h2 {

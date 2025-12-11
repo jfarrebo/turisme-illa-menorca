@@ -1,6 +1,9 @@
 
     <section class="card">
-        <img src="{{ img }}" alt="{{ alt }}">
+        <picture>
+          <source srcset="{{ img }}" type="image/webp">
+          <img src="{{ img }}" alt="{{ alt }}">
+        </picture>
         <div class="card-content">
         <h3>{{ title }}</h3>
         <a href="{{ link }}" class="btn-more-info {{ class }}" aria-label="Més informació sobre {{ title }}">Més informació</a>
