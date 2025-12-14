@@ -22,17 +22,115 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  @include transition(0.3s);
+}
+
+.wave-clip {
+  overflow: clip;
+  clip-path: url(#waveClip);
+  border-radius: 1em;
+}
+
+.svg-animation path {
+  animation: waveAnimation 8s ease-in-out infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    d: path('M0,60 C240,100 480,20 720,40 960,60 1200,100 1440,60 L1440,0 L0,0 Z');
+  }
+  25% {
+    d: path('M0,50 C240,30 480,80 720,60 960,40 1200,70 1440,50 L1440,0 L0,0 Z');
+  }
+  50% {
+    d: path('M0,40 C240,20 480,100 720,80 960,60 1200,20 1440,40 L1440,0 L0,0 Z');
+  }
+  75% {
+    d: path('M0,55 C240,75 480,35 720,50 960,70 1200,45 1440,55 L1440,0 L0,0 Z');
+  }
+  100% {
+    d: path('M0,60 C240,100 480,20 720,40 960,60 1200,100 1440,60 L1440,0 L0,0 Z');
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.introduccio, .mes-informacio, .imatge-detall, .categories-intro  {
+  animation: fadeIn 1s ease-out;
+  
+  h1 {
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+  
+  p {
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+  }
+  
+   h2 {
+    animation: fadeInUp 0.8s ease-out 0.3s backwards;
+  }
+}
+
+
+.cards-container .card {
+  animation: fadeInUp 0.6s ease-out backwards;
+  
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  &:nth-child(6) {
+    animation-delay: 0.6s;
+  }
 }
 
 .introduccio img,
 .cards-container .card img,
-.mes-informacio .imatges img,
+.mes-informacio .imatges picture,
 .imatge-detall img,
 .mes-informacio img {
   border-radius: 0.75em;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.introduccio img.hero-banner {
+  border-radius: .75em 0.75em 0 0em;
 }
 
-body {
+.cards-container .card img {
+  overflow: hidden;
+}
+body { 
   font-family: $font-body;
   background-color: $color-background;
   color: $color-primary;
@@ -60,6 +158,7 @@ body {
   h6 {
     font-family: $font-headers;
     color: $color-accent;
+    @include transition(0.3s);
   }
   p {
     line-height: 1.5;
@@ -105,7 +204,7 @@ footer {
 }
 
 .categories-intro {
-  margin-top: 2.5em;
+  margin: 2.5em 0;
   display: flex;
   flex-direction: column;
   gap: 2.5em;
@@ -137,6 +236,20 @@ article {
     flex: 1 1 calc(100% - 1.25em); /* ocupa el 100% menys el gap en mobile */
     max-width: 100%;
     box-sizing: border-box;
+    @include transition(0.3s);
+    
+    &:hover {
+      transform: translateY(-0.5em);
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+    }
+    
+    img {
+      @include transition(0.4s);
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
     h3 {
       font-family: $font-body;
       font-size: 1.375em;
@@ -156,9 +269,30 @@ article {
       cursor: pointer;
       font-size: 1em;
       @include transition(0.3s);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s;
+      }
+
+      &:hover::before {
+        width: 300px;
+        height: 300px;
+      }
 
       &:hover {
         background-color: $color-accent;
+        transform: scale(1.02);
       }
       &.blocked {
         background-color: gray;
@@ -300,9 +434,6 @@ header {
   }
 }
 
-
-// moved .introduccio img to shared image styles above
-
 .list-icones {
   display: flex;
   flex-direction: column;
@@ -393,10 +524,12 @@ section.links-info {
       padding: 0.5em 0;
       width: auto;
       border-bottom: 0.125em solid transparent;
+      @include transition(0.3s);
       &:hover,
       &:focus {
         color: $color-primary;
         border-bottom-color: $color-primary;
+        transform: translateY(-0.125em);
       }
       &.active {
         font-weight: 700;
