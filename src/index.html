@@ -19,10 +19,20 @@
   <main>
     <section class="introduccio">
       <picture>
-        <source media="(min-width: 500px)" srcset="media/hero-cala-macarella-01.png?as=webp" type="image/webp">
-        <source media="(max-width: 500px)" srcset="media/hero-cala-macarella-02.png?as=webp" type="image/webp">
-        <img src="media/hero-cala-macarella-02.png" width="100%" class="wave" alt="Vista panoràmica de Menorca">
+        <source media="(min-width: 500px)" srcset="media/hero-cala-macarella-01.png?as=webp" type="image/webp" type="image/webp">
+        <source media="(max-width: 500px)" srcset="media/hero-cala-macarella-02.png?as=webp" type="image/webp" type="image/webp">
+        <img class="hero-banner" src="media/hero-cala-macarella-02.png" width="100%" class="wave" alt="Vista panoràmica de Menorca">
       </picture>
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="svg-animation">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#E2DAD5" />
+            <stop offset="50%" stop-color="#E8E0DB" />
+            <stop offset="100%" stop-color="#E5DDD8" />
+          </linearGradient>
+        </defs>
+        <path d="M0,60 C240,100 480,20 720,40 960,60 1200,100 1440,60 L1440,0 L0,0 Z" fill="url(#waveGradient)"/>
+      </svg>
       <h1>Descobreix Menorca</h1>
       <p>Benvingut a Menorca, una illa paradisíaca situada al cor de la Mediterrània. Coneguda per les seves cales de sorra blanca, aigües cristal·lines i pobles encantadors, Menorca és el destí perfecte per als amants de la natura i la cultura. Explora les nostres recomanacions de cales i pobles que no et pots perdre durant la teva visita.</p>
       <picture>
@@ -44,14 +54,30 @@
         <include src="card.html" locals='{"img": "{{ card.img }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'></include>
       </each>
     </section>
+
       <h2>Pobles amb encant</h2>
       <section class="cards-container" id="categoria2">
       <each loop="card in cards_pobles.slice(0, 3)">
         <include src="card.html" locals='{"img": "{{ card.img }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'></include>
       </each>
       </section>
+
     </article>
+    <section> 
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+          <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
+            <path d="M0,1 H0.0118 C0.0236,1 0.0476,1 0.0715,1 C0.0951,1 0.119,1 0.143,1 C0.1666,1 0.1905,1 0.2145,1 C0.2381,1 0.2619,1 0.2859,1 C0.3095,1 0.3333,1 0.3574,1 C0.381,1 0.4047,1 0.4287,1 C0.4523,1 0.4762,1 0.5002,1 C0.5238,1 0.5477,1 0.5717,1 C0.5952,1 0.619,1 0.643,1 C0.6666,1 0.6905,1 0.7145,1 C0.738,1 0.7619,1 0.7859,1 C0.8095,1 0.8334,1 0.8574,1 C0.881,1 0.9048,1 0.9288,1 C0.9524,1 0.9762,1 1,1 L0.9881,0.8684 C0.9762,0.7372 0.9524,0.4748 0.9286,0.3287 C0.9047,0.1818 0.881,0.1545 0.8571,0.2119 C0.8333,0.2693 0.8095,0.4171 0.7857,0.4895 C0.7619,0.5623 0.7381,0.5623 0.7143,0.5769 C0.6905,0.5919 0.6667,0.6198 0.6429,0.5623 C0.619,0.5049 0.5952,0.3571 0.5714,0.2847 C0.5476,0.1914 0.5238,0.1914 0.5,0.3078 C0.4762,0.4242 0.4524,0.6588 0.4286,0.731 C0.4048,0.8037 0.381,0.7164 0.3571,0.659 C0.3333,0.6016 0.3095,0.5868 0.2857,0.5258 C0.2619,0.4648 0.2381,0.4171 0.2143,0.4112 C0.1905,0.4054 0.1667,0.4242 0.1429,0.3968 C0.119,0.3694 0.0952,0.2847 0.0714,0.352 C0.0476,0.4242 0.0238,0.6588 0.0118,0.7747 L0,0.8909 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+      <picture>
+        <source srcset="media/clip-banner.png?as=webp" type="image/webp">
+        <img class="wave-clip" src="media/clip-banner.png" width="100%" alt="Vista panoràmica de Menorca">
+      </picture>
+    </section>
   </main>
+
   <include src="footer.html"></include>
   
   <script type="module" src="js/toggleMenu.js"></script>
