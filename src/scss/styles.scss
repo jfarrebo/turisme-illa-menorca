@@ -568,8 +568,6 @@ section.links-info {
       flex-direction: row;
       gap: 0.75em;
       img {
-        flex: 1 1 calc(33.333% - 0.75em);
-        max-width: calc(33.333% - 0.75em);
         height: auto;
         display: block;
       }

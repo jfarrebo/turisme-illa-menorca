@@ -1,8 +1,9 @@
 
     <section class="card">
         <picture>
-          <source srcset="{{ img }}" type="image/webp">
-          <img src="{{ img }}" alt="{{ alt }}">
+          <source srcset="{{ img_d }}" media="(min-width: 521px)" type="image/webp">
+          <source srcset="{{ img_m }}" media="(max-width: 520px)" type="image/webp">
+          <img src="{{ img_d }}" alt="{{ alt }}">
         </picture>
         <div class="card-content">
         <h3>{{ title }}</h3>
