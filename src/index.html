@@ -14,7 +14,7 @@
     />
     <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
     <link rel="stylesheet" href="scss/styles.scss" />
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,6 +46,7 @@
             width="100%"
             class="wave"
             alt="Vista panoràmica de Menorca"
+            loading="eager"
           />
         </picture>
         <div>
@@ -140,6 +141,7 @@
             src="media/home/clip-banner-02.png"
             width="100%"
             alt="Vista panoràmica de Menorca"
+            loading="lazy"
           />
         </picture>
       </section>
@@ -147,6 +149,6 @@
 
     <include src="footer.html"></include>
 
-    <script type="module" src="js/toggleMenu.js"></script>
+    <script type="module" src="js/toggleMenu.js" defer></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
         <picture>
           <source srcset="{{ img_d }}" media="(min-width: 521px)" type="image/webp">
           <source srcset="{{ img_m }}" media="(max-width: 520px)" type="image/webp">
-          <img src="{{ img_d }}" alt="{{ alt }}">
+          <img src="{{ img_d }}" alt="{{ alt }}" loading="lazy">
         </picture>
         <div class="card-content">
         <h3>{{ title }}</h3>
