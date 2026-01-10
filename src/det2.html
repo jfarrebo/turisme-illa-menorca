@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
     <link rel="stylesheet" href="scss/styles.scss" />
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
           <picture>
             <source media="(min-width: 500px)" srcset="media/cales//mitjaneta/cala-mitjaneta-01.png?as=webp" type="image/webp">
             <source media="(max-width: 500px)" srcset="media/cales//mitjaneta/cala-mitjaneta-00.png?as=webp" type="image/webp">
-            <img src="media/cales//mitjaneta/cala-mitjaneta-01.png" width="100%" alt="Petita platja de Cala Mitjaneta">
+            <img src="media/cales//mitjaneta/cala-mitjaneta-01.png" width="100%" alt="Petita platja de Cala Mitjaneta" loading="eager">
           </picture>
           <div class="descripcio">
             <h1>Cala Mitjaneta</h1>
@@ -53,13 +53,13 @@
           </p>
           <div class="imatges">
             <picture>
-              <img src="media/cales//mitjaneta/cala-mitjaneta-02-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-02-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-02-500w.png?as=webp 2x" alt="Cala Mitjaneta vista des de dalt">
+              <img src="media/cales//mitjaneta/cala-mitjaneta-02-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-02-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-02-500w.png?as=webp 2x" alt="Cala Mitjaneta vista des de dalt" loading="lazy">
             </picture>
               <picture>
-              <img src="media/cales//mitjaneta/cala-mitjaneta-03-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-03-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-03-500w.png?as=webp 2x" alt="Cala Mitjaneta vista des del lateral">
+              <img src="media/cales//mitjaneta/cala-mitjaneta-03-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-03-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-03-500w.png?as=webp 2x" alt="Cala Mitjaneta vista des del lateral" loading="lazy">
             </picture>
               <picture>
-              <img src="media/cales//mitjaneta/cala-mitjaneta-04-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-04-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-04-500w.png?as=webp 2x" alt="Cala Mitjaneta vista de dins del mar">
+              <img src="media/cales//mitjaneta/cala-mitjaneta-04-400w.png"  srcset="media/cales//mitjaneta/cala-mitjaneta-04-400w.png?as=webp, media/cales/mitjaneta/cala-mitjaneta-04-500w.png?as=webp 2x" alt="Cala Mitjaneta vista de dins del mar" loading="lazy">
             </picture>
             </div>
           <div>
@@ -87,7 +87,7 @@
     </main>
     <include src="footer.html"></include>
 
-    <script type="module" src="js/toggleMenu.js"></script>
+    <script type="module" src="js/toggleMenu.js" defer></script>
   </body>
 
 </html>
