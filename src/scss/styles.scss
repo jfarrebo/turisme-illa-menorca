@@ -89,6 +89,11 @@ img, .mes-informacio picture {
   }
 }
 
+// Remove animation from hero banner for better LCP
+.introduccio .hero-banner {
+  animation: none !important;
+}
+
 
 .cards-container .card {
   animation: fadeInUp 0.6s ease-out backwards;
