@@ -2,9 +2,10 @@
     <section class="card">
         <picture>
           <source srcset="{{ img_d }}" media="(min-width: 521px)" type="image/webp">
-          <source srcset="{{ img_m }}" media="(max-width: 520px)" type="image/webp">
-          <img src="{{ img_d }}" alt="{{ alt }}" width="400" height="300"{{ loading }}{{ fetchpriority }}>
+          <img src="{{ img_m }}" alt="{{ alt }}" width="400" height="300"{{ loading }}{{ fetchpriority }}>
         </picture>
         <div class="card-content">
         <h3>{{ title }}</h3>
         <a href="{{ link }}" class="btn-more-info {{ class }}" aria-label="Més informació sobre {{ title }}">Més informació</a>
+
+        </div>
