@@ -140,6 +140,7 @@ img, .mes-informacio picture {
 .mes-informacio .imatges picture,
 .imatge-detall img,
 .mes-informacio img {
+  display: block;
   border-radius: 0.75em;
   width: 100%;
   height: auto;
