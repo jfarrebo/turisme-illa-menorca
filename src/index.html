@@ -8,19 +8,19 @@
       name="description"
       content="Descobreix les meravelles de Menorca: cales paradisíaques i pobles encantadors."
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <script src="https://kit.fontawesome.com/d678f7e453.js" crossorigin="anonymous" defer></script>
+    
     <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
-    <link rel="stylesheet" href="scss/styles.scss" />
+    <link rel="stylesheet" href="scss/styles.scss" rel="preload" as="style" onload="this.rel='stylesheet'"/>
     <script type="module" src="js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link 
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;700&display=swap" 
+      media="print" 
+      onload="this.media='all'"
+    >
   </head>
 
   <body data-page="home">
@@ -43,10 +43,11 @@
           <img
             class="hero-banner"
             src="media/home/hero-cala-macarella-02.png"
-            width="100%"
+            width="213"
+            height="145"
             class="wave"
             alt="Vista panoràmica de Menorca"
-            loading="eager"
+            fetchpriority="high"
           />
         </picture>
         <div>
@@ -91,7 +92,7 @@
         <section class="cards-container" id="categoria1">
           <each loop="card in cards_cales.slice(0, 3)">
             <include
-              src="card.html"
+              src="card-lazy.html"
               locals='{"img_d": "{{ card.img_d }}","img_m": "{{ card.img_m }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'
             ></include>
           </each>
@@ -101,7 +102,7 @@
         <section class="cards-container" id="categoria2">
           <each loop="card in cards_pobles.slice(0, 3)">
             <include
-              src="card.html"
+              src="card-lazy.html"
               locals='{"img_d": "{{ card.img_d }}","img_m": "{{ card.img_m }}", "title": "{{ card.title }}", "alt": "{{ card.alt }}", "link": "{{ card.link }}", "class": "{{ card.class }}"}'
             ></include>
           </each>
@@ -126,7 +127,8 @@
           <img
             class="wave-clip"
             src="media/home/clip-banner-02.png"
-            width="100%"
+            width="360"
+            height="150"
             alt="Vista panoràmica de Menorca"
             loading="lazy"
           />
