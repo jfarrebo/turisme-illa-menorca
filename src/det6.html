@@ -4,17 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Binibèquer</title>
-    <meta name="description"
-      content="Binibèquer és un dels pobles més pintorescos de Menorca, amb les seves cases blanques i carrerons estrets." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta name="description" content="Binibèquer és un dels pobles més pintorescos de Menorca, amb les seves cases blanques i carrerons estrets." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
     <link rel="icon" href="media/favicon.png" sizes="48x48" type="image/png" />
+    <link rel="preload" href="scss/styles.scss" as="style" />
     <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNcWx4sfA.woff2" as="font" type="font/woff2" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" /></noscript>
   </head>
 
   <body data-page="pobles">
@@ -25,7 +32,7 @@
           <picture>
             <source media="(min-width: 500px)" srcset="media/pobles/binibequer/poble-binibequer-01.png?as=webp" type="image/webp">
             <source media="(max-width: 500px)" srcset="media/pobles/binibequer/poble-binibequer-00.png?as=webp" type="image/webp">
-            <img src="media/pobles/binibequer/poble-binibequer-01.png" width="100%" alt="Vista de les cases de Binibèquer" loading="eager">
+            <img src="media/pobles/binibequer/poble-binibequer-01.png" width="100%" alt="Vista de les cases de Binibèquer" fetchpriority="high">
           </picture>
           <div class="descripcio">
             <h1>Binibèquer</h1>
@@ -50,13 +57,13 @@
           </p>
           <div class="imatges">
             <picture>
-              <img src="media/pobles/binibequer/poble-binibequer-02-400w.png" srcset="media/pobles/binibequer/poble-binibequer-02-400w.png?as=webp, media/pobles/binibequer/poble-binibequer-02-400w.png?as=webp 2x" alt="Nucli antinc de Binibèquer" loading="lazy">
+              <img src="media/pobles/binibequer/poble-binibequer-02-400w.png" srcset="media/pobles/binibequer/poble-binibequer-02-400w.png?as=webp 1x, media/pobles/binibequer/poble-binibequer-02-500w.png?as=webp 2x" alt="Nucli antinc de Binibèquer" width="400" height="300" loading="lazy">
             </picture>
             <picture>
-              <img src="media/pobles/binibequer/poble-binibequer-03-400w.png" srcset="media/pobles/binibequer/poble-binibequer-03-400w.png?as=webp, media/pobles/binibequer/poble-binibequer-03-400w.png?as=webp 2x" alt="Escales dels carrerons de Binibèquer" loading="lazy">
+              <img src="media/pobles/binibequer/poble-binibequer-03-400w.png" srcset="media/pobles/binibequer/poble-binibequer-03-400w.png?as=webp 1x, media/pobles/binibequer/poble-binibequer-03-500w.png?as=webp 2x" alt="Escales dels carrerons de Binibèquer" width="400" height="300" loading="lazy">
             </picture>
             <picture>
-              <img src="media/pobles/binibequer/poble-binibequer-04-400w.png" srcset="media/pobles/binibequer/poble-binibequer-04-400w.png?as=webp, media/pobles/binibequer/poble-binibequer-04-400w.png?as=webp 2x" alt="Carrerons de Binibèquer" loading="lazy">
+              <img src="media/pobles/binibequer/poble-binibequer-04-400w.png" srcset="media/pobles/binibequer/poble-binibequer-04-400w.png?as=webp 1x, media/pobles/binibequer/poble-binibequer-04-500w.png?as=webp 2x" alt="Carrerons de Binibèquer" width="400" height="300" loading="lazy">
             </picture>
           </div>
           <div>
