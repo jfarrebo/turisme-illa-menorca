@@ -1,5 +1,22 @@
 @import "../../node_modules/normalize.css/normalize.css";
 
+// Font-display override for Font Awesome to improve FCP
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Font Awesome 6 Free");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Font Awesome 6 Free");
+}
+
 // Variables
 $color-primary: #1a4f63;
 $color-accent: #746558;
